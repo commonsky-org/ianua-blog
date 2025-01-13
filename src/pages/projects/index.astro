@@ -1,0 +1,95 @@
+---
+import Header from "@components/Header.astro";
+import Footer from "@components/Footer.astro";
+import Layout from "@layouts/Layout.astro";
+import Main from "@layouts/Main.astro";
+
+import { SITE } from "@config";
+import LinkButton from "@components/LinkButton.astro";
+
+---
+
+<Layout title={`Projects | ${SITE.title}`}>
+  <Header activeNav="projects" />
+  <Main pageTitle="Projects" pageDesc="All the projects from the ianua.">
+
+    <img width="334px" src="/assets/construction.jpg" />
+    <small>Photo by <a href="https://unsplash.com/@danist07?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Danist Soh</a> on <a href="https://unsplash.com/photos/low-angle-photography-of-cranes-on-top-of-building-8Gg2Ne_uTcM?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></small>
+      
+    <br><br>
+    <p>
+      <LinkButton
+        className="underline decoration-dashed underline-offset-4 hover:text-skin-accent"
+        href="https://www.etymonline.com/word/project" target="_blank"
+      >PROJECT</LinkButton> (n.) - c. 1400, projecte, "a plan, draft, scheme, design," from Medieval Latin proiectum "something thrown forth," noun use of neuter of Latin proiectus, past participle of proicere "stretch out, thrust out, throw forth," from pro- "forward" (see pro-) + combining form of iacere (past participle iactus) "to throw" (from PIE root *ye- "to throw, impel").
+      <br><br>
+      Here are <i>projects 🥏</i> projected and thrown out into the world. 
+    </p>
+
+    <br><hr>
+
+    <h2>🪐 <a href="https://beam.ianua.app" target="_blank" title="Open Beam">Beam</a></h2>
+    <a href="https://beam.ianua.app" target="_blank" title="Open Beam">
+      <div style="display: flex; flex-wrap: wrap;">
+        <img width="334px" src="/assets/scotty.jpg" />
+        <img width="334px" src="/assets/beam.jpg" />
+      </div>
+    </a>
+    <br>
+    <ul>
+      <li>👉 <a href="https://beam.ianua.app" target="_blank">Open app</a></li>
+      <li>👉 <a href="https://github.com/ianua-app/beam">GitHub Source Code (GPL-3.0)</a></li>
+    </ul>
+    <br>
+    <p>
+      Imagine you could beam yourself and a couple of compadres into unusual & delightful environments to talk together with high-latency audio and low-quality graphics! That's what Beam can do, for free, in your browser, with no sign-up or registration required. Beam me up, Scotty! 
+    </p>
+
+    <br><hr>
+
+    <h2>🌎  <a href="https://news.ianua.app" target="_blank" title="Open News Planet">News Planet</a></h2>
+    <a href="https://news.ianua.app" target="_blank" title="Open News Planet">
+      <div style="display: flex; flex-wrap: wrap;">
+        <img width="334px" src="/assets/planet.jpg" />
+        <img width="334px" src="/assets/news-planet.jpg" />
+      </div>
+    </a>
+    <small><p class="attribution">"<a rel="noopener noreferrer" href="https://www.flickr.com/photos/32985084@N00/4395912703">Planet Xiroph</a>" by <a rel="noopener noreferrer" href="https://www.flickr.com/photos/32985084@N00">Teleyinex</a> is licensed under <a rel="noopener noreferrer" href="https://creativecommons.org/licenses/by-sa/2.0/?ref=openverse">CC BY-SA 2.0 <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" style="height: 1em; margin-right: 0.125em; display: inline;" /><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" style="height: 1em; margin-right: 0.125em; display: inline;" /><img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" style="height: 1em; margin-right: 0.125em; display: inline;" /></a>.</p></small>
+    <br>
+    <ul>
+      <li>👉 <a href="https://news.ianua.app" target="_blank">Open app</a></li>
+      <li>👉 <a href="https://github.com/ianua-app/news-planet">GitHub Source Code (GPL-3.0)</a></li>
+    </ul>
+
+    <br>
+    <p>
+      This app visualizes daily news from free sources on a spinning globe, which you can step through with the ← and → arrow keys.
+    </p>
+
+    <br><hr>
+    
+    <h2>Other project ideas?</h2>
+    Reach out at <a href="mailto:hello@ianua.app">hello@ianua.app</a> with more ideas for creative, open apps.
+    <br><br>
+  </Main>
+  <Footer />
+</Layout>
+
+<style>
+  img {
+    border-radius: 54px;
+    opacity: .7;
+    margin-right: 12px;
+    margin-bottom: 12px;
+  }
+
+  h2 {
+    margin: 30px 0px;
+    font-size: 34px;
+    font-weight: bold;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+</style>
