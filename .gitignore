@@ -1,4 +1,4 @@
-1.env.*.sh
+*.local.*
 
 # build output
 .output/
