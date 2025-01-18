@@ -24,7 +24,7 @@ const { activeNav } = Astro.props;
               height={LOGO_IMAGE.height}
             />
           ) : (
-            <span><img style="display: inline-block; position: relative; top: -2px;" src="/arch.svg" width="24px" /><span style="margin-left: 4px; margin-top: 4px;">{SITE.title}</span></span>
+            <span><img style="display: inline-block; position: relative; top: -2px;" src="/saturn.svg" width="24px" /><span style="margin-left: 4px; margin-top: 4px;">{SITE.title}</span></span>
           )
         }
       </a>
@@ -56,7 +56,7 @@ const { activeNav } = Astro.props;
         </button>
         <ul id="menu-items" class="display-none sm:flex">
           <li>
-            <a href="/projects/" class={activeNav === "posts" ? "active" : ""}>
+            <a href="/projects/" class={activeNav === "projects" ? "active" : ""}>
               Projects
             </a>
           </li>
