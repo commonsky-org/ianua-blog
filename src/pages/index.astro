@@ -23,14 +23,22 @@ const socialCount = SOCIALS.filter(social => social.active).length;
   <Header />
   <main id="main-content">
     <section id="hero">
-      <!--img style="display: inline-block; position: relative; top: -9px; left: -4px;" src="/favicon.svg" width="44px" /-->
-      <h1>the {SITE.title} iniative.</h1>
+
+      <p>        
+        <LinkButton
+        className="underline decoration-dashed underline-offset-4 hover:text-skin-accent"
+        href="https://en.wiktionary.org/wiki/ianua"
+      >
+        CommonSky.org
+      </LinkButton> 
+      
       <a
         target="_blank"
         href="/rss.xml"
         class="rss-link"
         aria-label="rss feed"
         title="RSS Feed"
+        style="position: relative; top: 3px;"
       >
         <svg xmlns="http://www.w3.org/2000/svg" class="rss-icon"
           ><path
@@ -41,15 +49,8 @@ const socialCount = SOCIALS.filter(social => social.active).length;
         </svg>
         <span class="sr-only">RSS Feed</span>
       </a>
-
-      <p>
-        Welcome! 
-        <LinkButton
-        className="underline decoration-dashed underline-offset-4 hover:text-skin-accent"
-        href="https://en.wiktionary.org/wiki/ianua"
-      >
-        IANUA
-      </LinkButton> means "entrance, door, to access", and is an iniative to help build better software & knowledge-access projects in reliable, sustainable and productive ways.
+      
+      is a start-up for sustainable and beneficial software & ideas.
       <br><br>
       <ul>
         <li>- Open technologies and knowledge.</li>

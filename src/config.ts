@@ -2,10 +2,10 @@ import type { Site, SocialObjects } from "./types";
 
 export const SITE: Site = {
   website: "https://blog.ianua.app", // replace this with your deployed domain
-  author: "Tyler Ayers",
+  author: "@commonsky.org",
   profile: "https://blog.ianua.app/about",
   desc: "A collective for sustainable, efficient & creative tech solutions.",
-  title: "ianua",
+  title: "CommonSky.org",
   ogImage: "astropaper-og.jpg",
   lightAndDarkMode: true,
   postPerIndex: 4,
@@ -32,6 +32,12 @@ export const LOGO_IMAGE = {
 };
 
 export const SOCIALS: SocialObjects = [
+  {
+    name: "Bluesky",
+    href: "https://bsky.app/profile/commonsky.org",
+    linkTitle: ` ${SITE.title} on Bluesky`,
+    active: true,
+  },
   {
     name: "Github",
     href: "https://github.com/ianua-app/ianua-blog",
