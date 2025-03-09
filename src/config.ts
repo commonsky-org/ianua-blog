@@ -5,7 +5,7 @@ export const SITE: Site = {
   author: "@plnet.app",
   profile: "https://plnet.app/about",
   desc: "A collective for sustainable, efficient & creative tech solutions.",
-  title: "Planet Apps Home",
+  title: "Planet Apps",
   ogImage: "astropaper-og.jpg",
   lightAndDarkMode: true,
   postPerIndex: 4,
