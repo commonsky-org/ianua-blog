@@ -1,11 +1,11 @@
 import type { Site, SocialObjects } from "./types";
 
 export const SITE: Site = {
-  website: "https://blog.ianua.app", // replace this with your deployed domain
-  author: "@commonsky.org",
-  profile: "https://blog.ianua.app/about",
+  website: "https://plnet.app",
+  author: "@plnet.app",
+  profile: "https://plnet.app/about",
   desc: "A collective for sustainable, efficient & creative tech solutions.",
-  title: "CommonSky.org",
+  title: "Planet Apps Home",
   ogImage: "astropaper-og.jpg",
   lightAndDarkMode: true,
   postPerIndex: 4,
@@ -13,7 +13,7 @@ export const SITE: Site = {
   scheduledPostMargin: 15 * 60 * 1000, // 15 minutes
   showArchives: true,
   editPost: {
-    url: "https://github.com/ianua-app/ianua-blog/edit/main/src/content/blog",
+    url: "https://github.com/planet-apps/home/edit/main/src/content/blog",
     text: "Suggest Changes",
     appendFilePath: true,
   },
@@ -40,7 +40,7 @@ export const SOCIALS: SocialObjects = [
   },
   {
     name: "Github",
-    href: "https://github.com/ianua-app/ianua-blog",
+    href: "https://github.com/planet-apps",
     linkTitle: ` ${SITE.title} on Github`,
     active: true,
   },
